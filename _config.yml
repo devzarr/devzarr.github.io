@@ -22,7 +22,7 @@ title: Zarr Blog
 email: devzarr@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Zarr is an implementation of chunked, compressed, N-Dimensional arrays for Python.
-#baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://devzarr.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: zarr_dev
 github_username:  zarr-developers
