@@ -3,7 +3,7 @@ layout: post
 title:  "Zarr Protocol v3 Design Update"
 date:   2019-06-19
 categories: zarr specs
-permalink: /v3-update
+permalink: /v3-update/
 ---
 
 Today I put together some [slides summarising the current state of
@@ -68,4 +68,4 @@ is up for discussion. So if you have any comments or ideas, please do
 get in touch, anyone is welcome to participate.
 
 
-Written by [Alistair Miles](https://github.com/alimanfoo).
+Written by [Alistair Miles](https://github.com/alimanfoo)

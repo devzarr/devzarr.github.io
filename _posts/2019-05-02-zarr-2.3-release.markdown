@@ -3,7 +3,7 @@ layout: post
 title:  "Zarr Python 2.3 Release"
 date:   2019-05-23
 categories: zarr python release
-permalink: /release-23
+permalink: /release-23/
 ---
 
 Recently we released version 2.3 of the [Python Zarr
