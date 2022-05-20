@@ -36,7 +36,7 @@ The pre-release can be installed via: `pip install —pre zarr`.
 
 There have been significant changes to
 [Zarr's Python](https://github.com/zarr-developers/zarr-python) codebase to implement
-V3 functionality. I'd be highlighting some of the main changes here:
+V3 functionality. Highlights of the main changes include:
 
 - A new function is added in `store.py`, which verifies that a key conforms to
   the [V3 specification](https://zarr-specs.readthedocs.io/en/core-protocol-v3.0-dev/).
@@ -59,14 +59,12 @@ V3 functionality. I'd be highlighting some of the main changes here:
   listed [here](https://zarr-specs.readthedocs.io/en/core-protocol-v3.0-dev/extensions/data-types.html).
 - New tests added for all the new and modified features!
 
-
-These are some high-level changes that I've tried to list here. If you're
-interested in browsing through all of the code changes, please refer to PR
-[#898](https://github.com/zarr-developers/zarr-python/pull/898).
+If you're interested in browsing through all of the code changes, please refer
+to PR [#898](https://github.com/zarr-developers/zarr-python/pull/898).
 
 The work on V3 was done by [Gregory Lee](https://github.com/grlee77) and was
 funded by the [CZI](https://chanzuckerberg.com/eoss/). The Zarr Community
-extends their wholesome gratitude to Gregory for completing this! 🙌🏻
+extends their wholesome gratitude to Gregory for completing this! 🙌
 
 ## Appending performance improvement
 
