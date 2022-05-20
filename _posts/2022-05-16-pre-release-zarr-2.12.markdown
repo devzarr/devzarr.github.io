@@ -35,13 +35,25 @@ There have been significant changes to
 [Zarr's Python](https://github.com/zarr-developers/zarr-python) codebase to implement
 V3 functionality. I'd be highlighting some of the main changes here:
 
-- A new function is added in `store.py`, which verifies that a key conforms to the [V3 specification](https://zarr-specs.readthedocs.io/en/core-protocol-v3.0-dev/).
-- Added function in `store.py` to ensure internally that Zarr stores are always a class with a specific interface derived from `Store`, which is slightly different from `MutableMapping`.
-- Separating `metadata` files from the data (arrays). Previously metadata and arrays were stored together in a consolidated group known as `.zgroup`.
-- Changes in `convenience.py` to use Zarr V3. The default value is `None`; it will attempt to infer the version from `store` if possible; otherwise, it will fall back to V2.
-- Consolidating all metadata for groups and arrays within the given store into a single resource and putting it under the given key. The changes can be seen [here](https://github.com/zarr-developers/zarr-python/blob/b9b9bf9e0577380222f2d7871e5272d8dfff9723/zarr/convenience.py#L1163) in `convenience.py`.
-- Modification in `creation.py`, which enables the creation of an array using Zarr V3. If `None`, it will be inferred from `store` or `chunk_store`; otherwise defaults to V2.
-- Updated `meta.py` with the new V3 data types links. The V3 data types are listed [here](https://zarr-specs.readthedocs.io/en/core-protocol-v3.0-dev/extensions/data-types.html).
+- A new function is added in `store.py`, which verifies that a key conforms to
+  the [V3 specification](https://zarr-specs.readthedocs.io/en/core-protocol-v3.0-dev/).
+- Added function in `store.py` to ensure internally that Zarr stores are always
+  a class with a specific interface derived from `Store`, which is slightly
+  different from `MutableMapping`.
+- Separating `metadata` files from the data (arrays). Previously metadata and
+  arrays were stored together in a consolidated group known as `.zgroup`.
+- Changes in `convenience.py` to use Zarr V3. The default value is `None`; it
+  will attempt to infer the version from `store` if possible; otherwise, it
+  will fall back to V2.
+- Consolidating all metadata for groups and arrays within the given store into
+  a single resource and putting it under the given key. The changes can be seen
+  [here](https://github.com/zarr-developers/zarr-python/blob/b9b9bf9e0577380222f2d7871e5272d8dfff9723/zarr/convenience.py#L1163)
+  in `convenience.py`.
+- Modification in `creation.py`, which enables the creation of an array using
+  Zarr V3. If `None`, it will be inferred from `store` or `chunk_store`;
+  otherwise defaults to V2.
+- Updated `meta.py` with the new V3 data types links. The V3 data types are
+  listed [here](https://zarr-specs.readthedocs.io/en/core-protocol-v3.0-dev/extensions/data-types.html).
 - New tests added for all the new and modified features!
 
 
