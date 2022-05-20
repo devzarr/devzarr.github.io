@@ -3,7 +3,9 @@ layout: post
 title: "Zarr Python 2.12.0a1 Release"
 date: 2022-05-16
 categories: blog
-permalink: /release-2-12-0-a1/
+permalink: /pre-release-2-12/
+redirect_from:
+  - /release-2-12-0-a1/
 ---
 
 Pre-release version `2.12.0a1` of the [Zarr Python package](https://github.com/zarr-developers/zarr-python) has been released! 🎉
