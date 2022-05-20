@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Zarr Python 2.12.0a1 Release"
+title: "Pre-release of Zarr Python 2.12"
 date: 2022-05-16
 categories: blog
 permalink: /pre-release-2-12/
@@ -8,7 +8,7 @@ redirect_from:
   - /release-2-12-0-a1/
 ---
 
-Pre-release version `2.12.0a1` of the [Zarr Python package](https://github.com/zarr-developers/zarr-python) has been released! 🎉
+Pre-release versions of [Zarr Python](https://github.com/zarr-developers/zarr-python) `2.12` are now available! 🎉
 
 This blog post aims to overview new features, especially newly added support for reading and writing to Zarr V3 arrays. Zarr V3 is the upcoming evolved format for storing N-dimensional chunked compressed arrays, which is succeeded by Zarr V2. This blog also highlights other enhancements like creating `FSStore` from an existing fsspec filesystem, performance improvement for Zarr arrays when appending data to S3, bug fixes, documentation and a maintenance fix.
 
