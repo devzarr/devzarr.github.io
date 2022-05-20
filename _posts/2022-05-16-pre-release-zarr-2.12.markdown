@@ -12,22 +12,25 @@ Pre-release versions of
 [Zarr Python](https://github.com/zarr-developers/zarr-python) `2.12`
 are now available! 🎉
 
-This blog post aims to overview new features, especially newly added support
-for reading and writing to Zarr V3 arrays. Zarr V3 is the upcoming evolved
-format for storing N-dimensional chunked compressed arrays, which is
-succeeded by Zarr V2. This blog also highlights other enhancements like
+This blog post aims to overview new features, especially newly added
+experimental support for reading and writing to Zarr V3, the upcoming
+format for storing N-dimensional chunked compressed data.
+This blog also highlights other enhancements like
 creating `FSStore` from an existing fsspec filesystem, performance
 improvement for Zarr arrays when appending data to S3, bug fixes,
 documentation and a maintenance fix.
 
 ## Add suport for reading and writing Zarr V3
 
-This version provides the infrastructure for reading and writing the upcoming
-V3 spec of the Zarr format. The new `zarr._store.v3` package has the necessary
-classes and functions for evaluating Zarr V3. Since the design is not
-finalised, the classes and functions are not automatically imported into the
-regular Zarr namespace. However, setting the `ZARR_V3_API_AVAILABLE`
-environment will activate them.
+Zarr Python 2.12 provides experimental infrastructure for reading and writing
+the upcoming V3 spec of the Zarr format. Users wishing to prepare for the
+migration can set the environment variable `ZARR_V3_EXPERIMENTAL_API` to begin
+experimenting, however data written with this API should not yet be considered
+final.
+
+The new `zarr._store.v3` package has the necessary classes and functions for
+evaluating Zarr V3. Since the design is not finalised, the classes and
+functions are not automatically imported into the regular Zarr namespace.
 
 The pre-release can be installed via: `pip install —pre zarr`.
 
