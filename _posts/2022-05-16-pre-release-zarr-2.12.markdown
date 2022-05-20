@@ -32,8 +32,8 @@ environment will activate them.
 The pre-release can be installed via: `pip install —pre zarr`.
 
 There have been significant changes to
-[Zarr’s Python](https://github.com/zarr-developers/zarr-python) codebase to implement
-V3 functionality. I’d be highlighting some of the main changes here:
+[Zarr's Python](https://github.com/zarr-developers/zarr-python) codebase to implement
+V3 functionality. I'd be highlighting some of the main changes here:
 
 - A new function is added in `store.py`, which verifies that a key conforms to the [V3 specification](https://zarr-specs.readthedocs.io/en/core-protocol-v3.0-dev/).
 - Added function in `store.py` to ensure internally that Zarr stores are always a class with a specific interface derived from `Store`, which is slightly different from `MutableMapping`.
@@ -45,7 +45,7 @@ V3 functionality. I’d be highlighting some of the main changes here:
 - New tests added for all the new and modified features!
 
 
-These are some high-level changes that I’ve tried to list here. If you’re
+These are some high-level changes that I've tried to list here. If you're
 interested in browsing through all of the code changes, please refer to PR
 [#898](https://github.com/zarr-developers/zarr-python/pull/898).
 
@@ -56,7 +56,7 @@ extends their wholesome gratitude to Gregory for completing this! 🙌🏻
 ## Appending performance improvement
 
 The old implementation iterated through all the `old` chunks and removed those
-that didn’t exist in the `new` chunks. As a result, it led to significant time
+that didn't exist in the `new` chunks. As a result, it led to significant time
 delays when appending data to Zarr arrays in cloud services like S3.
 
 The new and improved implementation will iterate through each dimension and
@@ -119,6 +119,6 @@ possible! 🙌🏻
 
 If you find the above features useful and end up using them, please mention
 [@zarr_dev](https://twitter.com/zarr_dev) on Twitter and tweet using #ZarrData,
-and we’ll make sure to get it featured! ✌🏻
+and we'll make sure to get it featured! ✌🏻
 
 ~Sanket Verma
