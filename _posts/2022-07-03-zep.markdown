@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Zarr Enhancement Proposals"
+description: Blog Post on Zarr Enhancement Proposals
 date: 2022-07-03
 categories: blog
 permalink: /zep/
