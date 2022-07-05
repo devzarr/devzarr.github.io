@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Zarr Enhancement Proposals"
+title: "Inception of Zarr Enhancement Proposals"
 description: Blog Post on Zarr Enhancement Proposals
 date: 2022-07-03
 categories: blog
@@ -11,9 +11,12 @@ permalink: /zep/
 
 It’s been a long time since I’ve talked to you, and I think there wouldn’t be a
 better time to do it, along with the announcement of our newly created
-community feedback process. I’ll discuss the motivation and need for a process
-for the Zarr community. After that, I’ll do a walk-through of different stages
-during its creation.
+community feedback process, which I’ve been working on for quite some time now.
+It’s been fun and intensive learning since I started working on the ZEPs.
+
+So first, I’ll discuss the motivation and need for a process for the Zarr
+community. After that, I’ll do a walk-through of different stages during its
+creation.
 
 But first, I’d like to share my experience working with the Zarr community
 briefly. June 2022 marks the completion of 5 months of me working with the
