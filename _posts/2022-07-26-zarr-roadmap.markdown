@@ -4,7 +4,7 @@ title: "Zarr Roadmap"
 description: Blog Post on Zarr Accomplishments and Roadmap
 date: 2022-07-26
 categories: blog
-permalink: /roadmap/
+permalink: /eoss4-roadmap/
 ---
 
 ### Hola Zarr Community! 🙋🏻‍♂️
@@ -21,7 +21,8 @@ aimed to accelerate Zarr’s development on issues often too significant to
 tackle through volunteers’ contributions. Some of the high-level goals we
 focused on using the grant were API unification across open-source projects
 like NumPy, Dask, Xarray, project maturity, and efficient community engagement.
-The [Zarr Steering Council](https://github.com/zarr-developers/governance/blob/main/GOVERNANCE.md#zarr-steering-council) spent almost a year working towards these goals, and
+The Zarr Community along with the [Zarr Steering Council](https://github.com/zarr-developers/governance/blob/main/GOVERNANCE.md#zarr-steering-council)
+spent almost a year working towards these goals, and
 we’re proud to say that we’ve made significant progress.
 
 As promised in the last blog, I will talk about what we’ve accomplished so far
@@ -35,9 +36,9 @@ completed under the [CZI EOSS4](https://chanzuckerberg.com/eoss/proposals/?cycle
 
 > API Unification
 
-The Zarr format lets you store big-size arrays into small compressed chunks. So
-it’s logical that we collaborated with various array-providing projects like
-NumPy and Dask. API unification plays a crucial role in interoperability. This
+The Zarr format lets you store big-size arrays into small compressed chunks,
+making collaborations with various array-providing projects like NumPy and Dask
+a must. API unification plays a crucial role in interoperability. This
 will allow the OSS community to transparently choose between implementations
 making algorithms more generalisable and scalable.
 
@@ -49,6 +50,8 @@ and [*zarr-python #974*](https://github.com/zarr-developers/zarr-python/pull/974
 
 [Mads R.B. Kristensen](https://github.com/madsbk) worked on adding support for
 multiple array types. See [*numcodecs #305*](https://github.com/zarr-developers/numcodecs/pull/305).
+If you know of other ways that we could make Zarr work more cleanly with Dask,
+NumPy or other array APIs, please let us know. (How?)
 
 > Xarray / NetCDF Interoperability
 
@@ -79,8 +82,7 @@ of interoperability with other projects in the upcoming months.
 ## Community Engagement 👨‍👩‍👧‍👦🔗👫
 
 In this section, I’d be mainly talking about the community engagement part of
-Zarr. I’ll focus on the tasks and duties of the community manager role and how
-Zarr has been working on engaging with the broad community efficiently.
+Zarr. For my part, I’ve focused on:
 
 - The first and foremost thing I did when I started my role was to relaunch the
   Zarr Blog over at the new URL: [https://zarr.dev/blog](https://zarr.dev/blog). The newly launched blog
@@ -102,6 +104,9 @@ Zarr has been working on engaging with the broad community efficiently.
   [Ryan Abernathey](https://youtu.be/unGL07trSjA). I also presented at my local [PyData chapter](https://youtu.be/EDXxytmCGqw) 
   and was elated to see the engaging interaction with the community.
 
+- Zarr V2 is now an [OGC Standard](https://portal.ogc.org/files/100727) thanks
+  to efforts led by [Ryan Abernathey](https://github.com/rabernat/).
+
 - Apart from physically reaching out to the community, we also worked on our
   social media presence by actively tweeting and blogging about Zarr.
 
@@ -114,8 +119,10 @@ Zarr has been working on engaging with the broad community efficiently.
   delivered. We’ve already distributed many of them and will give them in
   future meetings.
 
-- Zarr V2 is now an [OGC Standard](https://portal.ogc.org/files/100727) thanks
-  to efforts led by [Ryan Abernathey](https://github.com/rabernat/).
+<p align="center">
+  <img src="../assets/images/zarr_sticker.jpeg" alt="zarr_sticker" width="270">
+  <center> Zarr Sticker </center>
+</p>
 
 
 We achieved a few high-level goals that would help strengthen and bring the Zarr
@@ -124,7 +131,7 @@ releases, managing community calls, regular maintenance of Zarr repositories and
 various [Zarr Implementations](https://github.com/zarr-developers/zarr_implementations).
 
 
-## What does the future looks like? 🔮
+## What does the future look like? 🔮
 
 I’m very excited and looking forward to Zarr’s future. Having a systematic
 process in place and a dedicated community manager has streamlined the
@@ -135,11 +142,12 @@ is the next potential and upcoming change. In upcoming months, we will be focusi
 
 - Implementing Zarr Specification V3 across multiple programming languages
 - Implementing Sharding w/ [scalable minds GmbH](https://scalableminds.com/)
-- [Fsspec](https://github.com/fsspec/) Integration
-- Development of Sparse Arrays
+- Zarr User Survey 2022 to better understand the community needs
+- Contracting with Python-based developers and organisations to add new features like IPFS and extensions like:
+  - [Fsspec](https://github.com/fsspec/) Integration
+  - Development of Sparse Arrays
 - Improving visibility of the project by presenting at conferences and meet-ups
 - Aggregating Zarr data from the community and showcasing them on our website
-- Contracting with Python-based developers and organisations to add new features
 
 ## Conclusion 🙌🏻
 
@@ -148,11 +156,11 @@ milestones. We solved some of the crucial technical and community problems
 which have paved a smooth path for further development. We believe the upcoming
 progress will be in streamlined and much more systematic manner.
 
-As for me, its been 6 months since I started working with the [wonderful humans](https://gitter.im/zarr-developers/community#people)
-of Zarr and everyday I get to learn something new in terms of community
+As for me, it's been six months since I started working with the [wonderful humans](https://gitter.im/zarr-developers/community#people)
+of Zarr, and every day I get to learn something new in terms of community
 engagement, technical skills or as simple as talking and teaching about Zarr to
 a group of humans. I believe that the future of Zarr looks promising and
-there’s many more exciting things are yet to come!
+there are many more exciting things yet to come!
 
 Thanks for reading this blog post. If you’d like to contribute to Zarr in any
 manner feel free to ping me or drop a 'Hi🙋🏻‍♂️' over at our [Gitter](https://gitter.im/zarr-developers/community) channel. Talk to you soon! 
